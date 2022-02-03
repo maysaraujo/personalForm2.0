@@ -1,0 +1,60 @@
+body {
+  background-color: #f0ffff;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+fieldset {
+  border-radius: 10px;
+  border: 1em 0;
+  margin: 1em;
+  padding: 1em;
+  border: 2px solid #f0ffff;
+  background: #e6d2f9;
+}
+
+legend {
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px #0000000f;
+  padding: 5px;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  width: 80px;
+  border: 0 none;
+  border-radius: 5px;
+  color: #000;
+  background-color: #fff;
+  padding: 5px;
+  display: block;
+}
+
+input[type="submit"]:hover {
+  color: #beb9b9;
+}
+
+select {
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px #0000000f;
+  padding: 5px;
+}
+
+textarea {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  width: 15em;
+  height: 5em;
+}

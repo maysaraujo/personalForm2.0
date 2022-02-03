@@ -1,102 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Primeiro Formulário 2.0</title>
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Primeiro Formulário 2.0</title>
+  <body>
+    <form action="">
+      <fieldset class="group">
+        <legend>Account</legend>
 
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
+        <div class="account">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required autofocus />
+        </div>
 
-<body>
+        <div class="account">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+        </div>
 
-	<form action="">
+        <div class="account">
+          <label for="age">Age:</label>
+          <input type="number" id="age" min="10" max="100" required />
+        </div>
+      </fieldset>
 
-		<fieldset class="group">
-			<legend>Account</legend>
+      <fieldset class="group">
+        <legend>Which option best describes your current role?</legend>
 
-			<div class="account">
-				<label for="name">Name:</label>
-				<input type="text" name="name" id="name" required>
-			</div>
+        <div class="select">
+          <select name="option">
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="prefer">Prefer not to say</option>
+            <option value="other">Other</option>
+            <br />
+          </select>
+        </div>
+      </fieldset>
 
-			<div class="account">
-				<label for="email">Email:</label>
-				<input type="email" name="email" id="email" required>
-			</div>
+      <fieldset class="group">
+        <legend>Would you recommend freeCodeCamp to a friend?</legend>
 
-			<div class="account">
-				<label for="age">Age:</label>
-				<input type="text" name="age" id="age" required>
-			</div>
-		</fieldset>
+        <div class="radio">
+          <input type="radio" name="friend" value="definitely" />
+          Definitely<br />
+          <input type="radio" name="friend" value="maybe" /> Maybe<br />
+          <input type="radio" name="friend" value="not" /> Not sure<br /><br />
+        </div>
+      </fieldset>
 
-		<fieldset class="group">
-			<legend>Which option best describes your current role?</legend>
+      <fieldset class="group">
+        <legend>What is your favorite feature of freeCodeCamp?</legend>
 
-			<div class="select">
-				<select name="option">
-					<option disabled selected value>Select current role</option>
-					<option value="student">Student</option>
-					<option value="job">Full Time Job</option>
-					<option value="learner">Full Time Learner</option>
-					<option value="prefer">Prefer not to say</option>
-					<option value="other">Other</option><br>
-				</select>
-			</div>
-		</fieldset>
+        <div class="select">
+          <select name="option">
+            <option value="select">Select an option</option>
+            <option value="cha">Challenges</option>
+            <option value="pro">Projects</option>
+            <option value="com">Community</option>
+            <option value="open">Open Source</option>
+            <br /><br /><br /><br />
+          </select>
+        </div>
+      </fieldset>
 
-		<fieldset class="group">
-			<legend>Would you recommend freeCodeCamp to a friend?</legend>
-			<div class="radio">
-				<input type="radio" name="friend" value="definitely"> Definitely<br>
-				<input type="radio" name="friend" value="maybe"> Maybe<br>
-				<input type="radio" name="friend" value="not"> Not sure<br><br>
-			</div>
-		</fieldset>
+      <fieldset class="choice">
+        <legend>What would you like to see improved?</legend>
 
-		<fieldset class="group">
-			<legend>What is your favorite feature of freeCodeCamp?</legend>
-			<div class="select">
-				<select name="option">
-					<option value="select">Select an option</option>
-					<option value="cha">Challenges</option>
-					<option value="pro">Projects</option>
-					<option value="com">Community</option>
-					<option value="open">Open Source</option><br><br><br><br>
-				</select>
-			</div class="campo">
-		</fieldset>
+        <div class="check">
+          <input type="checkbox" name="like" checked="checked" />Front-end
+          Projects<br />
+          <input type="checkbox" name="like" />Back-end Projects<br />
+          <input type="checkbox" name="like" />Data Visualization<br />
+          <input type="checkbox" name="like" />Challenges<br />
+          <input type="checkbox" name="like" />Open Source Community<br />
+          <input type="checkbox" name="like" />Gitter help rooms<br />
+          <input type="checkbox" name="like" />Videos<br />
+          <input type="checkbox" name="like" />City Meetups<br />
+          <input type="checkbox" name="like" />Wiki<br />
+          <input type="checkbox" name="like" />Forum<br />
+          <input type="checkbox" name="like" />Additional Courses<br /><br />
+        </div>
+      </fieldset>
 
-		<fieldset class="choice">
-			<legend>What would you like to see improved?</legend>
-			<div class="check">
-				<input type="checkbox" name="like" checked="checked">Front-end Projects<br>
-				<input type="checkbox" name="like">Back-end Projects<br>
-				<input type="checkbox" name="like">Data Visualization<br>
-				<input type="checkbox" name="like">Challenges<br>
-				<input type="checkbox" name="like">Open Source Community<br>
-				<input type="checkbox" name="like">Gitter help rooms<br>
-				<input type="checkbox" name="like">Videos<br>
-				<input type="checkbox" name="like">City Meetups<br>
-				<input type="checkbox" name="like">Wiki<br>
-				<input type="checkbox" name="like">Forum<br>
-				<input type="checkbox" name="like">Additional Courses<br><br>
-			</div>
-		</fieldset>
+      <fieldset class="group">
+        <legend>Comments</legend>
 
-		<fieldset class="group">
-			<legend>Comments</legend>
-			<div class="comment">
-				<label for="comments">Any comments?</label>
-				<textarea name="comments" id="comments"></textarea>
-				<input type="submit" value="Submit">
-			</div>
-		</fieldset>
-
-	</form>
-
-</body>
-
+        <div class="comment">
+          <label for="comments">Any comments?</label>
+          <textarea name="comments" id="comments"></textarea>
+          <input type="submit" value="Submit" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
 </html>
