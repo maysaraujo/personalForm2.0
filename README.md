@@ -1,1 +1,1 @@
-Versão 2.0 do meu primeiro formulário, usando HTML e CSS; é um formulário bem simples. As informações desse formulário, são de outro formulário da freeCodeCamp. Peguei essas informações para ter uma base melhor.
+Versão 2.0 do meu primeiro formulário, usando HTML e CSS. É um formulário bem simples. As informações desse formulário, são de outro formulário da freeCodeCamp. Escolhi essas informações para ter uma base melhor.
