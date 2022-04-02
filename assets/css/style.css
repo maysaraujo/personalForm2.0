@@ -58,3 +58,13 @@ textarea {
   width: 15em;
   height: 5em;
 }
+
+footer {
+  margin: 10px 0 100px 0;
+  color: #000;
+  font-size: 13px;
+  text-align: center;
+}
+footer a {
+  color: #e6d2f9;
+}
